@@ -1,3 +1,4 @@
+import re
 def calculator (number1,number2,operator):
     '''
     Returns the result of a math equation.
@@ -45,4 +46,4 @@ def parse_input():
     n2 = int (splitEqua[2])
     operator = splitEqua[1]
     calculator(n1,n2,operator)
-    
+   
