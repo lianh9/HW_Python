@@ -46,4 +46,4 @@ def parse_input():
     n2 = int (splitEqua[2])
     operator = splitEqua[1]
     calculator(n1,n2,operator)
-   
+parse_input()   
