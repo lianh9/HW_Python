@@ -41,7 +41,7 @@ def parse_input():
                 no return
     '''
     equation = input("Enter equation:")
-    splitEqu = re.split(r'(\D+)',equation)
+    splitEqu = re.split(r'(\D+\.)',equation)
     n1 = int (splitEqu[0])
     n2 = int (splitEqua[2])
     operator = splitEqua[1]
