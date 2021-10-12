@@ -40,10 +40,9 @@ def parse_input():
             Returns:
                 no return
     '''
-    equation = input("Enter equation: ")
+    equation = input("Enter equation:")
     splitEqu = re.split(r'(\D+)',equation)
     n1 = int (splitEqu[0])
     n2 = int (splitEqua[2])
     operator = splitEqua[1]
-    calculator(n1,n2,operator)
-parse_input()   
+    calculator(n1,n2,operator)   
