@@ -1,4 +1,3 @@
-import re
 def calculator (number1,number2,operator):
     '''
     Returns the result of a math equation.
@@ -38,11 +37,49 @@ def parse_input():
             Parameters:
                 no parameter
             Returns:
-                no return
+                return when one if condition satisified
     '''
     equation = input("Enter equation:")
-    splitEqu = re.split(r'(\D+\.)',equation)
-    n1 = int (splitEqu[0])
-    n2 = int (splitEqua[2])
-    operator = splitEqua[1]
-    calculator(n1,n2,operator)   
+    if "//" in equation:
+        operator = "//"
+        n1,n2 = equation.split("//")
+        n1 = float(n1)
+        n2 = float(n2)
+        calculator(n1,n2,operator)
+        return
+    if "**" in euqation:
+        operator = "**"
+        n1,n2 = equation.split("**")
+        n1 = float(n1)
+        n2 = float(n2)
+        calculator(n1,n2,operator)
+        return
+    if "+" in euqation:
+        operator = "+"
+        n1,n2 = equation.split("+")
+        n1 = float(n1)
+        n2 = float(n2)
+        calculator(n1,n2,operator)
+        return
+    if "-" in equation:
+        operator = "-"
+        n1,n2 = equation.split("-")
+        n1 = float(n1)
+        n2 = float(n2)
+        calculator(n1,n2,operator)
+        return
+    if "*" in equation:
+        operator = "*"
+        n1,n2 = equation.split("*")
+        n1 = float(n1)
+        n2 = float(n2)
+        calculator(n1,n2,operator)
+        return
+    if "/" in equation:
+        operator = "/"
+        n1,n2 = equation.split("/")
+        n1 = float(n1)
+        n2 = float(n2)
+        calculator(n1,n2,operator)
+        return
+
