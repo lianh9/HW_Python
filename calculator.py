@@ -11,22 +11,22 @@ def calculator (number1,number2,operator):
     if operator in ("+","-","*","/","//","**"):
         if operator == "+":
             result = number1 + number2
-            print(result)
+            return result
         elif operator == "-":
             result = number1 - number2
-            print(result)
+            return result
         elif operator == "*":
             result = number1 * number2
-            print(result)
+            return result
         elif operator == "/":
             result = number1 / number2
-            print(result)
+            return result
         elif operator == "//":
             result = number1 // number2
-            print(result)
+            return result
         elif operator == "**":
             result = number1 ** number2
-            print(result)
+            return result
         else :
             return
 
@@ -47,14 +47,14 @@ def parse_input():
         n2 = float(n2)
         calculator(n1,n2,operator)
         return
-    if "**" in euqation:
+    if "**" in equation:
         operator = "**"
         n1,n2 = equation.split("**")
         n1 = float(n1)
         n2 = float(n2)
         calculator(n1,n2,operator)
         return
-    if "+" in euqation:
+    if "+" in equation:
         operator = "+"
         n1,n2 = equation.split("+")
         n1 = float(n1)
