@@ -19,8 +19,12 @@ def calculator (number1,number2,operator):
             result = number1 * number2
             return result
         elif operator == "/":
-            result = number1 / number2
-            return result
+            if number2 == 0:
+                result = 0
+                return result
+            else:
+                result = number1 / number2
+                return result
         elif operator == "//":
             result = number1 // number2
             return result
